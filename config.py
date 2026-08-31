@@ -1,0 +1,12 @@
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+LLM_MODEL = "gpt-4o-mini"
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+CHUNK_SIZE = 400
+CHUNK_OVERLAP = 60
+TOP_K_RETRIEVE = 15
+TOP_K_FINAL = 6
+MAX_FEEDBACK_LOOPS = 2
+DATA_DIR = "data"
+VECTOR_DB_PATH = "vector_store.pkl"
